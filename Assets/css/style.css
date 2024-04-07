@@ -4,6 +4,7 @@
   margin: 0;
   
 }
+/* Need help fixing media query */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -11,7 +12,7 @@ body {
 }
 header {
   height: 80px;
-  width: 100%;
+  width: 1880px;
   text-align: end;
   align-content: center;
   border-bottom: 3px solid black;
@@ -25,7 +26,7 @@ main {
 }
 
 .leftSide {
-  width: 935px;
+  width: 933px;
   height: 766px;
   text-align: center;
   align-content: center;
@@ -34,12 +35,18 @@ main {
 }
 
 .rightSide {
-  width: 935px;
+  width: 933px;
   height: 766px;
   margin-left: 10px;
   text-align: center;
   align-content: center;
   border-left: 3px solid black;
   background-color: white;
+  
+}
+@media screen and (max-width:1546){
+  * {
+    width: 100%;
+  }
   
 }
