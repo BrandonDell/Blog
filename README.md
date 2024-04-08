@@ -15,8 +15,8 @@ This webisite allows new users the ability to read and write blog posts.
  ## Installation 
  Clone the respository to your Github account and deploy the website once finished and approved code. 
  
- Website Link: https://brandondell.github.io/employeePayrollTracker/
-
+ Website Link: https://github.com/BrandonDell/Blog
+<!-- Need to update screen shot -->
  ## Image
  ![DellCioppia](./Assets/images/screenShot.png)
 

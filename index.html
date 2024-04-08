@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <link rel="stylesheet" href="./Assets/css/form.css" />
-    <title>Document</title>
+    <title>My First Blog</title>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- blank with button to togle swith from either day not night setting -->
-      </nav>
+      <div id="toggleLightDark" class="toggleContainer">
+        <input type="checkbox" id="toggle" class="toggleCheckbox" />
+        <label for="toggle" class="toggleLabel">
+          <span class="toggleInner"></span>
+          <span class="toggleSwitch"></span>
+        </label>
+      </div>
     </header>
     <main>
       <section class="leftSide">
@@ -22,10 +26,10 @@
         <h2>What's on your mind?</h2>
         <form id="Form" action="blog.html" method="GET">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username"/>
+          <input type="text" id="username" name="username" />
 
           <label for="title">Title:</label>
-          <input type="text" id="title" name="title"/>
+          <input type="text" id="title" name="title" />
 
           <label for="content">Content:</label>
           <textarea id="content" name="content" rows="4"></textarea>
