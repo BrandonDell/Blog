@@ -1,14 +1,14 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
+document.getElementById('Form').addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    
-    let username = document.getElementById("username").value;
-    let title = document.getElementById("title").value;
-    let content = document.getElementById("content").value;
+  
+  let username = document.getElementById('username').value;
+  let title = document.getElementById('title').value;
+  let content = document.getElementById('content').value;
 
-    // need to send items to Database
-    console.log("Username:", username);
-    console.log("Title:", title);
-    console.log("Content:", content);
+  console.log('Username:', username);
+  console.log('Title:', title);
+  console.log('Content:', content);
 
-   
+  
+});
