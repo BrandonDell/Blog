@@ -9,6 +9,12 @@ document.getElementById('Form').addEventListener('submit', function (event) {
   console.log('Username:', username);
   console.log('Title:', title);
   console.log('Content:', content);
+  blogInfo = {
+    username: username, 
+    title: title,
+    content: content,
+}
 
+localStorage.setItem('blogPosts', JSON.stringify(blogInfo))
   
 });

@@ -1,5 +1,3 @@
-function goBack() {
-    window.history.back();
-}
-// // window.location.href = 'index.html';
-// ]);
+const blogInfo = localStorage.getItem("blogPosts");
+console.log(blogInfo);
+console.log(JSON.parse(blogInfo));

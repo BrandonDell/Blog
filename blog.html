@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <link rel="stylesheet" href="./Assets/css/blog.css" />
-    <link rel="stylesheet" href="/Assets/css/form.css" />
+    <link rel="stylesheet" href="./Assets/css/form.css" />
+    
     <title>Blog Posts</title>
   </head>
   <body>
     <header class="containerHeader">
       <h1>My First Blog</h1>
     <nav class="navigation">
-        <button class="backButton" onclick="goBack()">
-          Back to First Page
-        </button>
-        <div class="headerItem">icon</div>
+        <a href="./index.html">Back to first page</a> 
+        <div class="toggle-container">
+          <input type="checkbox" id="toggle" name="toggle-checkbox">
+          <label for="toggle" class="toggleLabel">Dark Mode</label>
+        </div>
       </nav>
     </header>
     <main>
@@ -58,7 +61,6 @@
       </div>
     </footer>
     <script src="./Assets/js/blog.js"></script>
-    <script src="./Assets/js/form.js"></script>
     <script src="./Assets/js/logic.js"></script>
   </body>
 </html>

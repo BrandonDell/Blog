@@ -2,37 +2,36 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0;
-  
+  transition: background-color 0.3s ease;
 }
-/* Need help fixing media query */
-/* Need help with toggle light/dark */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  transition: background-color 0.3s ease;
+  
 }
 
-.toggleContainer {
+.toggle-container {
   display: inline-block;
   position: relative;
 }
 
-.toggleCheckbox {
+.toggle-checkbox {
   display: none;
 }
 
-.toggleLabel {
+.toggle-label {
   display: block;
-  width: 70px;
+  width: 60px;
   height: 34px;
   background-color: #ccc;
-  border-radius: 18px;
+  border-radius: 17px;
   position: relative;
   cursor: pointer;
 }
 
-.toggleInner {
+.toggle-inner {
   display: block;
   width: 50%;
   height: 100%;
@@ -41,7 +40,7 @@ body {
   transition: margin 0.3s ease;
 }
 
-.toggleSwitch {
+.toggle-switch {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,26 +52,19 @@ body {
   transition: left 0.3s ease;
 }
 
-.toggleCheckbox:checked + .toggleLabel .toggleInner {
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
   margin-left: 50%;
 }
 
 .toggleCheckbox:checked + .toggleabel .toggleSwitch {
   left: calc(100% - 24px);
 }
-header {
-  height: 80px;
-  width: 1880px;
-  text-align: end;
-  align-content: center;
-  border-bottom: 3px solid black;
-  margin-bottom: 10px;
-  background-color: white;
-}
 main {
   display: flex; 
   flex-wrap: wrap;
   border-top: 3px solid black;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .leftSide {
@@ -95,13 +87,14 @@ h2 {
   margin-left: 10px;
   align-content: center;
   border-left: 3px solid black;
-  background-color: white;
-  
 }
 
-@media screen and (max-width:1546){
+@media screen and (max-width:800px){
   * {
     width: 100%;
   }
   
+}
+[data-theme="dark"] body { 
+  background-color: darkgray;
 }

@@ -1,4 +1,4 @@
-const toggleSwitch = document.querySelector('.toggleCheckbox');
+const toggleSwitch = document.querySelector('#toggle');
 
 toggleSwitch.addEventListener('change', switchTheme);
 

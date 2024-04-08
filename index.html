@@ -9,12 +9,9 @@
   </head>
   <body>
     <header>
-      <div id="toggleLightDark" class="toggleContainer">
-        <input type="checkbox" id="toggle" class="toggleCheckbox" />
-        <label for="toggle" class="toggleLabel">
-          <span class="toggleInner"></span>
-          <span class="toggleSwitch"></span>
-        </label>
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle" name="toggle-checkbox">
+        <label for="toggle" class="toggleLabel">Dark Mode</label>
       </div>
     </header>
     <main>
@@ -26,19 +23,18 @@
         <h2>What's on your mind?</h2>
         <form id="Form" action="blog.html" method="GET">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" />
+          <input type="text" id="username" name="username" required/>
 
           <label for="title">Title:</label>
-          <input type="text" id="title" name="title" />
+          <input type="text" id="title" name="title" required/>
 
           <label for="content">Content:</label>
-          <textarea id="content" name="content" rows="4"></textarea>
+          <textarea id="content" name="content" rows="4" required></textarea>
 
           <input type="submit" value="Submit" />
         </form>
       </section>
     </main>
-    <script src="./Assets/js/blog.js"></script>
     <script src="./Assets/js/form.js"></script>
     <script src="./Assets/js/logic.js"></script>
   </body>
