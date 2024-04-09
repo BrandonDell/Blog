@@ -16,14 +16,13 @@ This webisite allows new users the ability to read and write blog posts.
  Clone the respository to your Github account and deploy the website once finished and approved code. 
  
  Website Link: https://github.com/BrandonDell/Blog
-<!-- Need to update screen shot -->
+
  ## Image
- ![DellCioppia](./Assets/images/screenShot.png)
+ ![DellCioppia](./Assets/images/Blog%20Pic.png)
 
  ## Credits
- -UCF Coding Bootcamp Coures.
- -Tutor Chris helped me with debugin average salary, Math.floor section, and get random person 
- 
+ -UCF Coding Bootcamp
+ -Tutor John helped me with debuging the form file 
 
  ## License
  N/A
