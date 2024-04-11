@@ -31,26 +31,20 @@ header {
   display: grid;
   width: 100%;
   padding: 10px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
   row-gap: 10px;
 }
-.item {
-  font-size: 20px;
-  padding: 20px;
-  border: 2px solid black;
+#blogTable {
+  border: 3px solid black;
 }
-h3 {
-  border-bottom: 3px solid black;
-}
-p {
+ p {
   display: block;
   padding: 10px;
   margin-bottom: 20px;
-}
+  border-top: 3px solid black;
+} 
 footer {
   margin-top: 5px;
-  border-top: 5px solid black;
+  border-top: 3px solid black;
 }
 h5 {
   text-align: center;

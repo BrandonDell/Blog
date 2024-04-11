@@ -15,24 +15,28 @@
       </div>
     </header>
     <main>
+      <div class="box"> 
       <section class="leftSide">
         <h2>My First Blog</h2>
       </section>
-
       <section class="rightSide">
         <h2>What's on your mind?</h2>
         <form id="Form" action="blog.html" method="GET">
           <label for="username">Username:</label>
+          <!-- Here I addeded the required attribute to check if it has been filled out -->
           <input type="text" id="username" name="username" required/>
 
           <label for="title">Title:</label>
+          <!-- Here I addeded the required attribute to check if it has been filled out -->
           <input type="text" id="title" name="title" required/>
 
           <label for="content">Content:</label>
-          <textarea id="content" name="content" rows="4" required></textarea>
-          <input id="redirect"type="submit" value="Submit" />
+          <textarea id="content" name="content" rows="4" ></textarea>
+          <!-- Here I addeded the required attribute to check if it has been filled out -->
+          <input id="redirect"type="submit" value="Submit" required/>
         </form>
       </section>
+    </div>
     </main>
     <script src="./Assets/js/form.js"></script>
     <script src="./Assets/js/logic.js"></script>

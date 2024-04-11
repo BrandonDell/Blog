@@ -60,25 +60,23 @@ body {
   left: calc(100% - 24px);
 }
 main {
-  display: flex; 
-  flex-wrap: wrap;
   border-top: 3px solid black;
   margin-top: 20px;
   padding: 20px;
 }
 
+.box {
+  display: flex;
+  display: wrap;
+}
 .leftSide {
   width: 933px;
   height: 766px;
   text-align: center;
   align-content: center;
   font-size: 50px;
-  border-right: 3px solid black;
   background-image: url(../images/blog2.jpg);
   border-radius: 600px;
-}
-h2 {
-  text-align: center;
 }
 
 .rightSide {
@@ -89,9 +87,9 @@ h2 {
   border-left: 3px solid black;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
   * {
-    width: 100%;
+    flex-direction: column;
   }
   
 }
